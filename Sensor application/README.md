@@ -1,4 +1,4 @@
-### Sensor monitoring application
+# Sensor monitoring application
 This code allows to collect temperature and humidity data with a DHT22 sensor and an ARDUINO UNO board, and to display the data remotely in a web browser.
 
 First, you must connect the sensor to PIN 4, or change the code accordingly, and then the "DHT22.ino" code must be upload to the Arduino board using the open-source Arduino Software (IDE) [Arduino IDE](https://www.arduino.cc/en/main/software).
