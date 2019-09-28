@@ -55,7 +55,7 @@ class add(tornado.web.RequestHandler):
             logging.info("Configuration of Hydra client1 or client2")
             # We put the IP of the machine executing this script
             #slice.create("1")
-            logging.info("Configuration of vbs") #?????????????????
+            logging.info("Configuration of vbs")
             logging.info("Configuration of vue1")
             
         elif not res_id_2:
@@ -63,14 +63,14 @@ class add(tornado.web.RequestHandler):
             logging.info("Processing Slice Attributes. Deciding what to send to the corresponding Hydra clients, VBS and VUE")
             logging.info("Configuration of Hydra client1 or client2")
             
-            logging.info("Configuration of vbs")#?????????????????
+            logging.info("Configuration of vbs")
             logging.info("Configuration of vue2")
         elif not res_id_3:
             id="3"
             logging.info("Processing Slice Attributes. Deciding what to send to the corresponding Hydra clients, VBS and VUE")
             logging.info("Configuration of Hydra client1 or client2")
             
-            logging.info("Configuration of vbs")#?????????????????
+            logging.info("Configuration of vbs")
             logging.info("Configuration of vue3")    
                   
         else:
