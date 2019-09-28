@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ static_url('estilos.css') }}" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function chair_status(evt){
+  if (evt.target.value =="shared"){
+    document.getElementById("chair1").disabled = false;
+    document.getElementById("chair2").disabled = false;
+    document.getElementById("chair3").disabled = false;
+    document.getElementById("chair4").disabled = false;
+
+  }else{
+    document.getElementById("chair1").disabled = true;
+    document.getElementById("chair2").disabled = true;
+    document.getElementById("chair3").disabled = true;
+    document.getElementById("chair4").disabled = true;
+    document.getElementById("chair1").value = "";
+    document.getElementById("chair2").value = "";
+    document.getElementById("chair3").value = "";
+    document.getElementById("chair4").value = "";
+  }
+}
+</script>
+
+</head>
+<body>
+
+ 
+ <form method="post">
+   <input type="hidden" name="id" value="{{ escape(y['id']) }}">
+   <label>RS_Name </label>
+   <input type="text" name="rs_name" value="{{ escape(y['rs_name']) }}" readonly>
+   <label>NetworkEndPoint_VBS:</label>
+   <input type="text" name="nep_vbs" value="{{ escape(y['nep_vbs']) }}" >
+   <label>Network End Point_VUE:</label>
+   <input type="text" name="nep_vue" value="{{ escape(y['nep_vue']) }} " >
+   <label >Channel Bandwidth_Min:</label>
+   <input type="text" name="channelbw_min" value="{{ escape(y['channelbw_min']) }} ">
+   <label>Channel Bandwidth_Max:</label>
+   <input type="text"  name="channelbw_max" value="{{ escape(y['channelbw_max']) }} ">
+   
+   <label>Channel Sharing Policy: </label>
+   {% if y['sharingpool']=="shared" %}
+   <select name="channelsharingpool" onchange="chair_status(event)">
+      <option  value="shared">Shared</option>
+      <option value="non-shared">Non-Shared</option>
+    </select><br>
+        
+   <label>Channel Air Time Policy:</label>
+   <input type="text" name="chairpolicy" value="{{ escape(y['chairpolicy']) }} ">
+   <label>Channel Air Time Min Ratio:</label>
+   <input type="text" name="chairminratio" value="{{ escape(y['chairminratio']) }} ">
+   <label>Channel Air Time Max Ratio:</label>
+   <input type="text" name="chairmaxratio" value="{{ escape(y['chairmaxratio']) }} ">
+   <label>Channel Air Tiem Averaging Interval:</label>
+   <input type="text" name="chairavgint" value="{{ escape(y['chairavgint']) }} ">
+   <input type="submit" name="Modify">
+   {% else %}
+   <select name="channelsharingpool" onchange="chair_status(event)">
+    <option  value="non-shared">Non-Shared</option>  
+    <option  value="shared">Shared</option>
+      
+    </select><br>
+        
+   <label>Channel Air Time Policy:</label>
+   <input type="text" name="chairpolicy" value="{{ escape(y['chairpolicy']) }} " >
+   <label>Channel Air Time Min Ratio:</label>
+   <input type="text" name="chairminratio" value="{{ escape(y['chairminratio']) }} " >
+   <label>Channel Air Time Max Ratio:</label>
+   <input type="text" name="chairmaxratio" value="{{ escape(y['chairmaxratio']) }} " >
+   <label>Channel Air Tiem Averaging Interval:</label>
+   <input type="text" name="chairavgint" value="{{ escape(y['chairavgint']) }} " >
+   <input type="submit" name="Modify">
+   {% end %}
+
+</form>
+</body>
+</html>

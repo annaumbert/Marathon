@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ static_url('estilos.css') }}" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function chair_status(evt){
+  if (evt.target.value =="shared"){
+    document.getElementById("chair1").disabled = false;
+    document.getElementById("chair2").disabled = false;
+    document.getElementById("chair3").disabled = false;
+    document.getElementById("chair4").disabled = false;
+
+  }else{
+    document.getElementById("chair1").disabled = true;
+    document.getElementById("chair2").disabled = true;
+    document.getElementById("chair3").disabled = true;
+    document.getElementById("chair4").disabled = true;
+    document.getElementById("chair1").value = "";
+    document.getElementById("chair2").value = "";
+    document.getElementById("chair3").value = "";
+    document.getElementById("chair4").value = "";
+  }
+}
+</script>
+
+
+</head>
+<body>
+    <div class="uno">
+        <img src="{{ static_url('logoupc.png') }}" alt="Universidad Politécnica de Cataluña" width="250" height="60" class="upc">
+        <img src="{{ static_url('trinity.png') }}" alt="Trinity College" width="250" height="60" class="trinity">
+        <img src="{{ static_url('5ginfire-logo3.png') }}" alt="5GInfire" width="250" height="60"class="cincog">
+</div>   
+<div class="titulo">RADIO SLICE MANAGER for MARATHON</div>
+<h3>Slices Creation</h3>
+
+<div class="container">
+  <form method="POST">
+    <label>RS_Name:</label>
+    <select name="rs_name">
+      {% if  not result1  %}
+        <option value="1">1</option>
+      {% end %}
+
+      {% if  not result2  %}
+        <option value="2">2</option>
+      {% end %}
+      
+      {% if  not result3  %}
+        <option value="3">3</option>
+      {% end %}
+    </select><br>
+    <label>Network End Point_VUE:</label>
+    <select name="nep_vue">
+        {% if  not value1  %}
+          <option value="vue1">VUE1</option>
+        {% end %}
+        {% if  not value2  %}
+          <option value="vue2">VUE2</option>
+        {% end %}  
+        {% if  not value3  %}
+          <option value="vue3">VUE3</option>
+        {% end %}
+      </select><br>
+    <label>Network End Point_VBS:</label>
+    <select name="nep_vbs">
+        <option value="vbs1">VBS1</option>
+        
+      </select><br>
+    
+
+    <label >Channel Bandwidth_Min (MAX:1000000):</label>
+    <input type="text" name="channelbw_min"/><br>
+    <label>Channel Bandwidth_Max (MAX:1000000):</label>
+    <input type="text" name="channelbw_max"/><br>
+    
+    <label>Channel Sharing Policy: </label>
+    <select name="channelsharingpool">
+      <option value="shared">Shared</option>
+      <option value="nonshared">Non-Shared</option>
+    </select><br>
+    <label>Channel Air Time Policy:</label>
+    <input type="text" id="chair1" name="chairpolicy"/><br>
+    <label>Channel Air Time Min Ratio:</label>
+    <input type="text" id="chair2" name="chairminratio"/><br>
+    <label>Channel Air Time Max Ratio:</label>
+    <input type="text" id="chair3" name="chairmaxratio"/><br>
+    <label>Channel Air Time Averaging Interval:</label>
+    <input type="text" id="chair4" name="chairavgint"/><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

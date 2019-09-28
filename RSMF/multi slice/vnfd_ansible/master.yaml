@@ -1,0 +1,4 @@
+        -include: hydra_server/vnfd/charms/ansible-charm-v2/playbook/playbook.yaml
+                hosts="192.168.5.59"
+        -include: hydra_client_2tx_2rx/vnfd/charms/ansible-charm-v2/playbook/playbook.yaml
+                hosts="192.168.5.84"        

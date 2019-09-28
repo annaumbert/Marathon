@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ static_url('estilos.css') }}" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+    <div class="uno">
+        <img src="{{ static_url('logoupc.png') }}" alt="Universidad Politécnica de Cataluña" width="250" height="60" class="upc">
+        <img src="{{ static_url('trinity.png') }}" alt="Trinity College" width="250" height="60" class="trinity">
+        <img src="{{ static_url('5ginfire-logo3.png') }}" alt="5GInfire" width="250" height="60"class="cincog">
+</div>   
+<div class="titulo">RADIO SLICE MANAGER for MARATHON</div>
+ <form method="post">
+   <input type="hidden" name="id" value="{{ escape(y['id']) }}">
+   <label>RS_Name </label>
+   <input type="text" name="rs_name" value="{{ escape(y['rs_name']) }}" readonly>
+   <label>NetworkEndPoint_VBS:</label>
+   <input type="text" name="nep_vbs" value="{{ escape(y['nep_vbs']) }}" >
+   <label>Network End Point_VUE:</label>
+   <select name="nep_vue">
+    {% if  not value1  or y['nep_vue'] == "vue1"%}
+           <option value="vue1">VUE1</option>
+         {% end %}
+         {% if  not value2  or y['nep_vue'] == "vue2" %}
+           <option value="vue2">VUE2</option>
+         {% end %}  
+         {% if  not value3 or y['nep_vue'] == "vue3" %}
+           <option value="vue3">VUE3</option>
+         {% end %}
+       </select><br>
+   <label >Channel Bandwidth_Min:</label>
+   <input type="text" name="channelbw_min" value="{{ escape(y['channelbw_min']) }} ">
+   <label>Channel Bandwidth_Max:</label>
+   <input type="text"  name="channelbw_max" value="{{ escape(y['channelbw_max']) }} ">
+   
+   <label>Channel Sharing Policy: </label>
+   {% if y['sharingpool']=="shared" %}
+   <select name="channelsharingpool">
+      <option  value="shared">Shared</option>
+      <option value="non-shared">Non-Shared</option>
+    </select><br>
+        
+   <label>Channel Air Time Policy:</label>
+   <input type="text" name="chairpolicy" value="{{ escape(y['chairpolicy']) }} ">
+   <label>Channel Air Time Min Ratio:</label>
+   <input type="text" name="chairminratio" value="{{ escape(y['chairminratio']) }} ">
+   <label>Channel Air Time Max Ratio:</label>
+   <input type="text" name="chairmaxratio" value="{{ escape(y['chairmaxratio']) }} ">
+   <label>Channel Air Tiem Averaging Interval:</label>
+   <input type="text" name="chairavgint" value="{{ escape(y['chairavgint']) }} ">
+   <input type="submit" name="Modify">
+   {% else %}
+   <select name="channelsharingpool" >
+    <option  value="non-shared">Non-Shared</option>  
+    <option  value="shared">Shared</option>
+      
+    </select><br>
+        
+   <label>Channel Air Time Policy:</label>
+   <input type="text" name="chairpolicy" value="{{ escape(y['chairpolicy']) }} " >
+   <label>Channel Air Time Min Ratio:</label>
+   <input type="text" name="chairminratio" value="{{ escape(y['chairminratio']) }} " >
+   <label>Channel Air Time Max Ratio:</label>
+   <input type="text" name="chairmaxratio" value="{{ escape(y['chairmaxratio']) }} " >
+   <label>Channel Air Tiem Averaging Interval:</label>
+   <input type="text" name="chairavgint" value="{{ escape(y['chairavgint']) }} " >
+   <input type="submit" name="Modify">
+   {% end %}
+
+</form>
+</body>
+</html>

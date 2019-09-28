@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ static_url('estilos.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h3>Slices {{ escape(y['id']) }} Attributes</h3>
+<label for="id">RS Name</label>
+<input type="text" value="{{ escape(y['rs_name']) }}" readonly>
+<label>NetworkEndPoint_VBS:</label>
+<input type="text" value="{{ escape(y['nep_vbs']) }}" readonly>
+<label>Network End Point_VUE:</label>
+<input type="text" value="{{ escape(y['nep_vue']) }} " readonly>
+<label >Channel Bandwidth_Min:</label>
+<input type="text" value="{{ escape(y['channelbw_min']) }} " readonly>
+<label>Channel Bandwidth_Max:</label>
+<input type="text" value="{{ escape(y['channelbw_max']) }} " readonly>
+<label>Channel Sharing Policy: </label>
+<input type="text" value="{{ escape(y['sharingpool']) }} " readonly>
+
+<label>Channel Air Time Policy:</label>
+<input type="text" value="{{ escape(y['chairpolicy']) }} " readonly>
+<label>Channel Air Time Min Ratio:</label>
+<input type="text" value="{{ escape(y['chairminratio']) }} " readonly>
+<label>Channel Air Time Max Ratio:</label>
+<input type="text" value="{{ escape(y['chairmaxratio']) }} " readonly>
+<label>Channel Air Tiem Averaging Interval:</label>
+<input type="text" value="{{ escape(y['chairavgint']) }} " readonly>
+<form action="/">
+    <input type="submit" value="RETURN">
+</form>
