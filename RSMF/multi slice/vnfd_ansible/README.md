@@ -3,7 +3,7 @@
 
 The build script creates all the following VNFD and NS files:
 
-1. hydra_server_vnfd.tar.gz
+1. marathon_hydra_server_vnfd.tar.gz
 2. marathon_vbs_vnfd.tar.gz
 3. marathon_vue1_vnfd.tar.gz
 4. marathon_vue2_vnfd.tar.gz
@@ -58,7 +58,7 @@ ping 2.2.2.1
 Access each VM and kill the python process.
 
 
-* In machine "hydra-server" execute (replace 192.168.5.54 by the ip of iris2):
+* In machine "marathon_hydra-server" execute (replace 192.168.5.54 by the ip of iris2):
 ```
 python ~/gr-hydra/grc_blocks/app/ansible_hydra_gr_server.py --ansibleIPPort 192.168.5.54:5000
 ```
