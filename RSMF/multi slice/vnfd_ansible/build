@@ -24,7 +24,7 @@ rm -rf tmp_$1
 }
 
 echo "----- Build the Server NFD -------"
-build_vnfd hydra_server
+build_vnfd marathon_hydra_server
 
 echo "----- Build the VBS NFD -------"
 build_vnfd marathon_vbs

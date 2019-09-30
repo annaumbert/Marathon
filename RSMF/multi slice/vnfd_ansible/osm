@@ -2,7 +2,7 @@
 
 case "$1" in
    "i")
-      osm vnfd-create hydra_server_vnf.tar.gz
+      osm vnfd-create marathon_hydra_server_vnf.tar.gz
       osm vnfd-create marathon_vbs_vnf.tar.gz
       osm vnfd-create marathon_vue1_vnf.tar.gz
       osm vnfd-create marathon_vue2_vnf.tar.gz
@@ -16,7 +16,7 @@ case "$1" in
    ;;
    "d")
       osm nsd-delete marathon_nsd
-      osm vnfd-delete hydra_server
+      osm vnfd-delete marathon_hydra_server
       osm vnfd-delete marathon_vbs
       osm vnfd-delete marathon_vue1
       osm vnfd-delete marathon_vue2

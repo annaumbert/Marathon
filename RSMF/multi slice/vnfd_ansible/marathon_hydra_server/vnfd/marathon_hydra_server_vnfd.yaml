@@ -1,9 +1,9 @@
 vnfd-catalog:
   vnfd:
-  - id: hydra_server
-    name: hydra_server
-    short-name: hydra_server
-    description: HyDRA-AAS VNF Server
+  - id: marathon_hydra_server
+    name: marathon_hydra_server
+    short-name: marathon_hydra_server
+    description: Marathon HyDRA-AAS VNF Server
 
     vendor: 5GINFIRE
     version: '1.0'
@@ -26,9 +26,9 @@ vnfd-catalog:
 
     # Atleast one VDU need to be specified
     vdu:
-    - id: hydra_server-VM
-      name: hydra_server-VM
-      description: HYDRA-AAS Server VM.
+    - id: marathon_hydra_server-VM
+      name: marathon_hydra_server-VM
+      description: Marathon HYDRA-AAS Server VM.
 
       image: marathon_img
       count: 1
