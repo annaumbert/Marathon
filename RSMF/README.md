@@ -5,6 +5,32 @@ Note that to use the RSMF you must have all the hydra components of the Marathon
 
 ![Marathon architecture](img/Marathon-components.png) 
 
-The final version is the *multi slice* one, and it includes the RSMF code, the VNFDs, the NS, and the Ansible files.
+The RSMF final version allows to create up to three radio slices.
 
-The first operational version, *one slice*, is also included in a different module.
+You can use that code in two ways: 
+1. Manual
+2. Assisted by ansible
+
+In both cases, before starting the RSMF you must run the hydra components (hydra_server, hydra_vr1_rx, hydra_vr2_rx, hydra_vr3_rx and hydra_client_2tx_rx).
+
+Then you must edit the file slice.py and change the IPaddresses of the machines running the VBS, and VUEs.
+In that version you change them at top: 
+
+![IP change slice.py](img/IP-change-slice-py.png)
+
+Now you can run the RSMF:
+
+
+```
+sudo python rsmf.py
+```
+
+Open a web browser and go to:
+
+```
+*IP_machine*:8888
+```
+
+And start managing from the RSMF homepage. 
+
+![RSMF main page](img/RSMF-main.png)
