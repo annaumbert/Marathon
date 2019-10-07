@@ -12,7 +12,7 @@ nsd-catalog:
     # Specify the VNFDs that are part of this NSD
     constituent-vnfd:
     - member-vnf-index: 1
-      vnfd-id-ref: hydra_server
+      vnfd-id-ref: marathon_hydra_server
       start-by-default: true
     - member-vnf-index: 2
       vnfd-id-ref: marathon_vue1

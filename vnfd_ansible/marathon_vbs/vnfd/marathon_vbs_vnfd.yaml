@@ -40,7 +40,7 @@ vnfd-catalog:
 #         node-cnt: '1'
       vm-flavor:
         memory-mb: 4096
-        storage-gb: 20
+        storage-gb: 30
         vcpu-count: 1
       interface:
       - external-connection-point-ref: ens3
