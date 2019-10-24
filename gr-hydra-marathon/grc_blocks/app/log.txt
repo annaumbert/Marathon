@@ -1,0 +1,633 @@
+Warning: failed to XInitThreads()
+linux; GNU C++ version 7.3.0; Boost_106501; UHD_003.010.003.000-0-unknown
+
+s_client_host: 192.168.5.64 -  s_server_host: 
+sending: '192.168.5.64' to 192.168.5.255:5001
+waiting for data on port UDP 5002
+some error occurred
+sending: '192.168.5.64' to 192.168.5.255:5001
+waiting for data on port UDP 5002
+some error occurred
+sending: '192.168.5.64' to 192.168.5.255:5001
+waiting for data on port UDP 5002
+some error occurred
+sending: '192.168.5.64' to 192.168.5.255:5001
+waiting for data on port UDP 5002
+some error occurred
+sending: '192.168.5.64' to 192.168.5.255:5001
+waiting for data on port UDP 5002
+from 192.168.5.64: UDP 50943: 192.168.5.64:5000
+Received: 192.168.5.64:5000
+Connecting to XVL server: 192.168.5.64:5000
+Sending:	{"xvl_syn":""}
+{
+    "xvl_ack": {
+        "status": "true",
+        "message": {
+            "condition": "Enabled",
+            "name": "XVL Hypervisor Server",
+            "version": "0.1"
+        }
+    }
+}
+
+Connecting to XVL server: 192.168.5.64:5000
+Sending:	{"xvl_rtx":{"id":1,"centre_freq":2099900000.000000,"padding":0,"bandwidth":400000.000000}}
+{
+    "xvl_rep": {
+        "status": "true",
+        "message": "Reservation succeeded.",
+        "udp_port": "33500"
+    }
+}
+
+Client Sink initialized successfully.
+s_client_host: 192.168.5.64 -  s_server_host: 
+sending: '192.168.5.64' to 192.168.5.255:5001
+waiting for data on port UDP 5002
+from 192.168.5.64: UDP 52175: 192.168.5.64:5000
+Received: 192.168.5.64:5000
+Connecting to XVL server: 192.168.5.64:5000
+Sending:	{"xvl_syn":""}
+{
+    "xvl_ack": {
+        "status": "true",
+        "message": {
+            "condition": "Enabled",
+            "name": "XVL Hypervisor Server",
+            "version": "0.1"
+        }
+    }
+}
+
+Connecting to XVL server: 192.168.5.64:5000
+Sending:	{"xvl_rrx":{"id":1,"centre_freq":2099900000.000000,"bandwidth":400000.000000, "ip":"192.168.5.64", "padding":0}}
+{
+    "xvl_rep": {
+        "status": "true",
+        "message": "Reservation succeeded.",
+        "udp_port": "33000"
+    }
+}
+
+Creating GNURadio UDP source block: (0.0.0.0: 33000)
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 0  Source: n/a     Key: packet_num   Value: 241
+  Offset: 0  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 0  Source: n/a     Key: len   Value: 74
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 74  Source: n/a     Key: packet_num   Value: 316
+  Offset: 74  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 74  Source: n/a     Key: len   Value: 68
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 142  Source: n/a     Key: packet_num   Value: 489
+  Offset: 142  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 142  Source: n/a     Key: len   Value: 62
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 204  Source: n/a     Key: packet_num   Value: 545
+  Offset: 204  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 204  Source: n/a     Key: len   Value: 50
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 254  Source: n/a     Key: packet_num   Value: 1212
+  Offset: 254  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 254  Source: n/a     Key: len   Value: 94
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 348  Source: n/a     Key: packet_num   Value: 1260
+  Offset: 348  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 348  Source: n/a     Key: len   Value: 88
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 436  Source: n/a     Key: packet_num   Value: 1445
+  Offset: 436  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 436  Source: n/a     Key: len   Value: 76
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 512  Source: n/a     Key: packet_num   Value: 1463
+  Offset: 512  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 512  Source: n/a     Key: len   Value: 62
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 574  Source: n/a     Key: packet_num   Value: 1552
+  Offset: 574  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 574  Source: n/a     Key: len   Value: 86
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 660  Source: n/a     Key: packet_num   Value: 1867
+  Offset: 660  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 660  Source: n/a     Key: len   Value: 60
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 720  Source: n/a     Key: packet_num   Value: 1875
+  Offset: 720  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 720  Source: n/a     Key: len   Value: 70
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 790  Source: n/a     Key: packet_num   Value: 1955
+  Offset: 790  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 790  Source: n/a     Key: len   Value: 62
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 852  Source: n/a     Key: packet_num   Value: 2152
+  Offset: 852  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 852  Source: n/a     Key: len   Value: 62
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 914  Source: n/a     Key: packet_num   Value: 2168
+  Offset: 914  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 914  Source: n/a     Key: len   Value: 78
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 992  Source: n/a     Key: packet_num   Value: 2173
+  Offset: 992  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 992  Source: n/a     Key: len   Value: 90
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1082  Source: n/a     Key: packet_num   Value: 2190
+  Offset: 1082  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1082  Source: n/a     Key: len   Value: 70
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1152  Source: n/a     Key: packet_num   Value: 2481
+  Offset: 1152  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1152  Source: n/a     Key: len   Value: 72
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1224  Source: n/a     Key: packet_num   Value: 2566
+  Offset: 1224  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1224  Source: n/a     Key: len   Value: 78
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1302  Source: n/a     Key: packet_num   Value: 2589
+  Offset: 1302  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1302  Source: n/a     Key: len   Value: 90
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1392  Source: n/a     Key: packet_num   Value: 2640
+  Offset: 1392  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1392  Source: n/a     Key: len   Value: 72
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1464  Source: n/a     Key: packet_num   Value: 2659
+  Offset: 1464  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1464  Source: n/a     Key: len   Value: 66
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1530  Source: n/a     Key: packet_num   Value: 2768
+  Offset: 1530  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1530  Source: n/a     Key: len   Value: 70
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1600  Source: n/a     Key: packet_num   Value: 2933
+  Offset: 1600  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1600  Source: n/a     Key: len   Value: 72
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1672  Source: n/a     Key: packet_num   Value: 2984
+  Offset: 1672  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1672  Source: n/a     Key: len   Value: 54
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1726  Source: n/a     Key: packet_num   Value: 3215
+  Offset: 1726  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1726  Source: n/a     Key: len   Value: 54
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1780  Source: n/a     Key: packet_num   Value: 3426
+  Offset: 1780  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1780  Source: n/a     Key: len   Value: 80
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1860  Source: n/a     Key: packet_num   Value: 3448
+  Offset: 1860  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1860  Source: n/a     Key: len   Value: 94
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 1954  Source: n/a     Key: packet_num   Value: 3574
+  Offset: 1954  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 1954  Source: n/a     Key: len   Value: 52
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2006  Source: n/a     Key: packet_num   Value: 3719
+  Offset: 2006  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2006  Source: n/a     Key: len   Value: 70
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2076  Source: n/a     Key: packet_num   Value: 3723
+  Offset: 2076  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2076  Source: n/a     Key: len   Value: 52
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2128  Source: n/a     Key: packet_num   Value: 3844
+  Offset: 2128  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2128  Source: n/a     Key: len   Value: 50
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2178  Source: n/a     Key: packet_num   Value: 3891
+  Offset: 2178  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2178  Source: n/a     Key: len   Value: 52
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2230  Source: n/a     Key: packet_num   Value: 213
+  Offset: 2230  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2230  Source: n/a     Key: len   Value: 60
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2290  Source: n/a     Key: packet_num   Value: 233
+  Offset: 2290  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2290  Source: n/a     Key: len   Value: 88
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2378  Source: n/a     Key: packet_num   Value: 383
+  Offset: 2378  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2378  Source: n/a     Key: len   Value: 56
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2434  Source: n/a     Key: packet_num   Value: 454
+  Offset: 2434  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2434  Source: n/a     Key: len   Value: 70
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2504  Source: n/a     Key: packet_num   Value: 459
+  Offset: 2504  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2504  Source: n/a     Key: len   Value: 66
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2570  Source: n/a     Key: packet_num   Value: 496
+  Offset: 2570  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2570  Source: n/a     Key: len   Value: 54
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2624  Source: n/a     Key: packet_num   Value: 511
+  Offset: 2624  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2624  Source: n/a     Key: len   Value: 74
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2698  Source: n/a     Key: packet_num   Value: 535
+  Offset: 2698  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2698  Source: n/a     Key: len   Value: 78
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2776  Source: n/a     Key: packet_num   Value: 601
+  Offset: 2776  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2776  Source: n/a     Key: len   Value: 60
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2836  Source: n/a     Key: packet_num   Value: 758
+  Offset: 2836  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2836  Source: n/a     Key: len   Value: 50
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2886  Source: n/a     Key: packet_num   Value: 971
+  Offset: 2886  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2886  Source: n/a     Key: len   Value: 74
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 2960  Source: n/a     Key: packet_num   Value: 1074
+  Offset: 2960  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 2960  Source: n/a     Key: len   Value: 54
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3014  Source: n/a     Key: packet_num   Value: 1136
+  Offset: 3014  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3014  Source: n/a     Key: len   Value: 58
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3072  Source: n/a     Key: packet_num   Value: 1200
+  Offset: 3072  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3072  Source: n/a     Key: len   Value: 50
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3122  Source: n/a     Key: packet_num   Value: 1217
+  Offset: 3122  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3122  Source: n/a     Key: len   Value: 76
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3198  Source: n/a     Key: packet_num   Value: 1338
+  Offset: 3198  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3198  Source: n/a     Key: len   Value: 56
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3254  Source: n/a     Key: packet_num   Value: 1388
+  Offset: 3254  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3254  Source: n/a     Key: len   Value: 92
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3346  Source: n/a     Key: packet_num   Value: 1654
+  Offset: 3346  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3346  Source: n/a     Key: len   Value: 96
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3442  Source: n/a     Key: packet_num   Value: 1685
+  Offset: 3442  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3442  Source: n/a     Key: len   Value: 66
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3508  Source: n/a     Key: packet_num   Value: 1829
+  Offset: 3508  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3508  Source: n/a     Key: len   Value: 72
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3580  Source: n/a     Key: packet_num   Value: 2011
+  Offset: 3580  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3580  Source: n/a     Key: len   Value: 80
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3660  Source: n/a     Key: packet_num   Value: 2195
+  Offset: 3660  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3660  Source: n/a     Key: len   Value: 60
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3720  Source: n/a     Key: packet_num   Value: 2260
+  Offset: 3720  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3720  Source: n/a     Key: len   Value: 54
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3774  Source: n/a     Key: packet_num   Value: 2562
+  Offset: 3774  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3774  Source: n/a     Key: len   Value: 54
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3828  Source: n/a     Key: packet_num   Value: 2655
+  Offset: 3828  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3828  Source: n/a     Key: len   Value: 58
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3886  Source: n/a     Key: packet_num   Value: 2668
+  Offset: 3886  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3886  Source: n/a     Key: len   Value: 52
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 3938  Source: n/a     Key: packet_num   Value: 2748
+  Offset: 3938  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 3938  Source: n/a     Key: len   Value: 72
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4010  Source: n/a     Key: packet_num   Value: 2878
+  Offset: 4010  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4010  Source: n/a     Key: len   Value: 62
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4072  Source: n/a     Key: packet_num   Value: 2906
+  Offset: 4072  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4072  Source: n/a     Key: len   Value: 56
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4128  Source: n/a     Key: packet_num   Value: 2967
+  Offset: 4128  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4128  Source: n/a     Key: len   Value: 62
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4190  Source: n/a     Key: packet_num   Value: 2987
+  Offset: 4190  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4190  Source: n/a     Key: len   Value: 78
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4268  Source: n/a     Key: packet_num   Value: 3008
+  Offset: 4268  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4268  Source: n/a     Key: len   Value: 62
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4330  Source: n/a     Key: packet_num   Value: 3041
+  Offset: 4330  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4330  Source: n/a     Key: len   Value: 62
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4392  Source: n/a     Key: packet_num   Value: 3087
+  Offset: 4392  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4392  Source: n/a     Key: len   Value: 56
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4448  Source: n/a     Key: packet_num   Value: 3151
+  Offset: 4448  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4448  Source: n/a     Key: len   Value: 52
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4500  Source: n/a     Key: packet_num   Value: 3279
+  Offset: 4500  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4500  Source: n/a     Key: len   Value: 50
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4550  Source: n/a     Key: packet_num   Value: 3383
+  Offset: 4550  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4550  Source: n/a     Key: len   Value: 100
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Tag Debug: VR1 RX
+Input Stream: 00
+  Offset: 4650  Source: n/a     Key: packet_num   Value: 3435
+  Offset: 4650  Source: n/a     Key: ofdm_sync_carr_offset   Value: 0
+  Offset: 4650  Source: n/a     Key: len   Value: 50
+----------------------------------------------------------------------
