@@ -193,17 +193,17 @@ class Slice:
 
     
 def create(slices,result,mf):
-        ## IMPORTANT: The script ansible_hydra_client_2tx_2rx already allocated resources for transmission and reception
-        ##            These resources are under the use of hydra_clients ID 1, and ID 2. The trick of this script is to connect
-        ##            with the server using the same ID (1 and 2), and them releasing the resources allocated.
-        ##            We can then allocate new resources from this python without impacting the slices.
-        
-        #Start Hydra Clients    
-        # We put the IP of the machine executing the VBS (This is for the server updates)
-        #hydra1 = hydra.hydra_client("192.168.5.94", 5000, 1, True)
-        hydra1 = hydra.hydra_client(vbs_ip, 5000, 1, True)
-        #hydra2 = hydra.hydra_client("192.168.5.94", 5000, 2, True)
-        hydra2 = hydra.hydra_client(vbs_ip, 5000, 2, True)
+    ## IMPORTANT: The script ansible_hydra_client_2tx_2rx already allocated resources for transmission and reception
+    ##            These resources are under the use of hydra_clients ID 1, and ID 2. The trick of this script is to connect
+    ##            with the server using the same ID (1 and 2), and them releasing the resources allocated.
+    ##            We can then allocate new resources from this python without impacting the slices.
+    
+    #Start Hydra Clients    
+    # We put the IP of the machine executing the VBS (This is for the server updates)
+    #hydra1 = hydra.hydra_client("192.168.5.94", 5000, 1, True)
+    hydra1 = hydra.hydra_client(vbs_ip, 5000, 1, True)
+    #hydra2 = hydra.hydra_client("192.168.5.94", 5000, 2, True)
+    hydra2 = hydra.hydra_client(vbs_ip, 5000, 2, True)
 
     if mf==0 or mf==1:#Add or Modify slice (When init mf=0)
                 
@@ -306,7 +306,7 @@ def create(slices,result,mf):
         s=y['sharingpool']
         if y['nep_vue']=='vue1':
             hydra1.free_resources()
-        else ((y['nep_vue']=='vue2' or y['nep_vue']=='vue3') and h2_ocup==1):
+        elif ((y['nep_vue']=='vue2' or y['nep_vue']=='vue3') and h2_ocup==1):
             hydra2.free_resources()
             h2_ocup = 0
 
