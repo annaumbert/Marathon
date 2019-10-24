@@ -4,4 +4,4 @@ MARATHON (MAnagenent of Radio Access neTwork slicing witH multi-applicatiON conc
 Here you can find the code developed for the experiment, by Universitat Politecnica de Catalunya
 [UPC](https://www.upc.edu)
 
-There are three modules for organizing the code, the RSMF for the Radio Slice Management Function, the Sensor application, and the vnfd-ansible. Details are included inside.
+There are four modules for organizing the code, the RSMF for the Radio Slice Management Function, the Sensor application, the gr-hydra code modified and the vnfd-ansible. Details are included inside.

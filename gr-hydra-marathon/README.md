@@ -1,5 +1,5 @@
-# gr-hydra
-
+# gr-hydra-marathon
+(The gr-hydra code by Maicon Kist modified for Marathon Experiment)
 [![Build Status](https://travis-ci.org/maiconkist/gr-hydra.svg?branch=bleeding)](https://travis-ci.org/maiconkist/gr-hydra)
 
 
